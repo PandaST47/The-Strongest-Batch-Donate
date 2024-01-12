@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift Light;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+    animation: pulse 10s ease-in-out infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+        background-size: 110%;
+    }
+  }
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo{
+    font-size: 35px;
+    color: #1E90FF;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav .logo span{
+    color: #0a22f7;
+    text-decoration: underline;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+  }
+  
+  section nav ul li a:hover {
+    color: rgb(71, 171, 253);
+    transform: scale(1.1);
+    transition: color 0.2s, transform 0.2s;
+}
+
+
+section .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .main_content .main_text h1 {
+    font-size: 90px;
+    line-height: 80px;
+    font-family: Bahnschrift Light;
+    background: linear-gradient(to right, #0a98f7, #0560d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section .main .main_content .main_text p {
+    width: 2000px;
+    font-family: Bahnschrift Light;
+    background: linear-gradient(to right, white, #0560d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+    font-size: 22px; /* Увеличение размера текста */
+    line-height: 1.5; /* Увеличение интерлиньяжа для лучшей читаемости */
+}
+
+section .main .main_content .main_text p::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 620px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgba(17, 17, 17, 0.8); /* Цвет прямоугольного окна */
+    z-index: -1;
+}
+
+section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right, #0a98f7, #0560d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+}
+
+
+section .main .main_content .main_image {
+    max-height: 1313px;
+}
+
+section .main .main_content .main_image img{
+    width: 970px;
+    left: 16%;
+    top: 15px;
+    position: relative;
+    transform: scaleX(-1);
+}
+
+
+section .main .social_icon{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+section .main .social_icon i {
+    /* ... */
+    transition: 0.3s;
+    animation: pulse 2s infinite;
+}
+
+section .main .social_icon i:hover{
+    color: #46a0fa;
+    transform: scale(1.2);
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+section .main .button{
+    position: absolute;
+    left: 6%;
+    padding: 25px 50px;
+    border-radius: 30px;
+    top: 80%;
+    background: linear-gradient(to right, #46a0fa, #394cf1);
+}
+
+section .main .button a{
+    color: white;
+   text-decoration: none; 
+}
+
+section .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+section .main .button:hover i{
+    transform: translateX(6px);
+}
+
+/* Clones*/
+
+.clones{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+}
+
+.clones h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #0a98f7, #0560d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clones .image img:hover {
+    transform: scale(1.2);
+}
+
+.clones .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.clones .box .card .image img{
+    width: 500px;
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+
+.clones .box .card .image img:hover {
+    transform: scale(1.2);
+}
+
