@@ -5,6 +5,11 @@
     font-family: Bahnschrift Light;
 }
 
+/* Медиазапрос для всех разрешений телефонов */
+@media only screen and (max-width: 767px) {
+    /* Добавьте стили для всех разрешений телефонов */
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -280,5 +285,58 @@ section .main .button:hover i{
 
 .clones .box .card .image img:hover {
     transform: scale(1.2);
+}
+
+.clones_text h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+.clones_text p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.mercenary_text h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+.mercenary_text p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.jedi_text h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+.jedi_text p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.plus_text h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+.plus_text p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
