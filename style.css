@@ -166,7 +166,6 @@ section .main .social_icon i:hover {
 
 section .main .button {
     display: flex;
-    position: absolute;
     left: 6%;
     padding: 35px 70px;
     border-radius: 30px;
@@ -213,9 +212,22 @@ section .main .button:hover i {
     -webkit-text-fill-color: transparent;
 }
 
+
 .clones .image img:hover {
     transform: scale(1.2);
+    border: 7px solid #0a98f7;
 }
+
+.image.sith img:hover {
+    transform: scale(1.2);
+    border: 7px solid red;
+}
+
+.image.mando img:hover{
+    transform: scale(1.2);
+    border: 7px solid orange;
+}
+
 
 .clones .box {
     width: 90%;
@@ -239,6 +251,20 @@ section .main .button:hover i {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    /* Modify styles here to make the layout responsive for smaller screens */
+  }
+  
+  /* For tablets and larger devices */
+  @media only screen and (min-width: 601px) {
+    /* Adjust styles here for tablets and larger screens */
+  }
+  
+  /* For desktops and larger screens */
+  @media only screen and (min-width: 1025px) {
+    /* Additional styling for desktop screens */
+  }
+
 .clones .box .card .image img {
     width: 100%;
     border-radius: 30px;
@@ -249,3 +275,20 @@ section .main .button:hover i {
     transform: scale(1.2);
     cursor: pointer;
 }
+
+.btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #3498db;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn a:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
