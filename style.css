@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 500px;
     font-style: normal;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -92,7 +94,6 @@ section .main .main_content {
 section .main .main_content .main_text h1 {
     font-size: 90px;
     line-height: 80px;
-    font-family: Bahnschrift Light;
     background: linear-gradient(to right, #0a98f7, #0560d6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -165,34 +166,6 @@ section .main .social_icon i:hover {
     100% {
         transform: scale(1);
     }
-}
-
-section .main .button {
-    display: flex;
-    left: 6%;
-    padding: 35px 70px;
-    border-radius: 30px;
-    top: 80%;
-    background: linear-gradient(to right, #46a0fa, #394cf1);
-}
-
-section .main .button a {
-    display: flex;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-section .main .button i {
-    display: flex;
-    color: white;
-    margin-left: 5px;
-    transition: 0.3s;
-}
-
-section .main .button:hover i {
-    display: flex;
-    transform: translateX(6px);
 }
 
 /* Clones */
@@ -291,7 +264,9 @@ section .main .button:hover i {
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .btn a:hover {
+.btn a:hover {
     background-color: #3498db;
     color: #fff;
-  }
+}
+
+
