@@ -273,12 +273,12 @@ section .main .social_icon i:hover {
 /* CSS */
 .clones_text p, .jedi_text p, .mercenary_text p, .plus_text p{
     display: none;
-  }
+}
   .clones_text p.show, .jedi_text p.show, .mercenary_text p.show, .plus_text p.show{
     display: block;
-  }
+}
 
-  .more {
+.more {
     background-color: #000000; /* Green */
     border: none;
     color: white;
@@ -291,15 +291,15 @@ section .main .social_icon i:hover {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 15px;
-  }
+}
   
-  .more:hover {
+.more:hover {
     background-color: white;
     color: black;
     border: 2px solid #000000;
-  }
+}
 
-  .beautiful-link {
+.beautiful-link {
     color: #FF6347; /* Tomato color */
     text-decoration: none;
     font-weight: bold;
