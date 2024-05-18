@@ -274,7 +274,26 @@ section .main .social_icon i:hover {
 .clones_text p, .jedi_text p, .mercenary_text p, .plus_text p{
     display: none;
 }
-  .clones_text p.show, .jedi_text p.show, .mercenary_text p.show, .plus_text p.show{
+.jedi_text p{
+    display: none;
+}
+.mercenary_text p{
+    display: none;
+}
+.plus_text p p{
+    display: none;
+}
+
+.clones_text p.show{
+    display: block;
+}
+.jedi_text p.show{
+    display: block;
+}
+.mercenary_text p.show{
+    display: block;
+}
+.plus_text p.show{
     display: block;
 }
 
