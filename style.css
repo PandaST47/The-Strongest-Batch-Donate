@@ -255,7 +255,7 @@ section .main .social_icon i:hover {
 .btn a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px -3px;
     border: 2px solid #3498db;
     color: #3498db;
     text-decoration: none;
@@ -270,3 +270,42 @@ section .main .social_icon i:hover {
 }
 
 
+/* CSS */
+.clones_text p, .jedi_text p, .mercenary_text p, .plus_text p{
+    display: none;
+  }
+  .clones_text p.show, .jedi_text p.show, .mercenary_text p.show, .plus_text p.show{
+    display: block;
+  }
+
+  .more {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px -4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .more:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+  }
+
+  .beautiful-link {
+    color: #FF6347; /* Tomato color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.beautiful-link:hover {
+    color: #FF4500; /* OrangeRed color */
+}
